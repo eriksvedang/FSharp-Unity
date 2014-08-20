@@ -1,6 +1,8 @@
 How to use F# with Unity
 ========================
 
+Note: this has only been tested out with Xamarin Studio on Mac OS X
+
 1. Create a Unity Project
 2. Create a F# project (lib) and put it in the root of the Unity project
 3. In the Unity 'Assets' folder, create a folder called 'Frameworks' and add the FSharp.Core.dll to it
@@ -9,7 +11,9 @@ How to use F# with Unity
 6. Add the unity mscorlib.dll to somewhere in the F# project folder, and then to the project References
 7. Make a custom build command (working dir: ${TargetDir}) that copies the resulting dll to the Unity 'Frameworks' folder
 
+```bash
     cp GameTypes.dll ../../../../Assets/Frameworks/
+```
 
 How to write Unity components in F#
 ===================================
