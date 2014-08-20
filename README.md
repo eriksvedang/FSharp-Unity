@@ -1,5 +1,5 @@
-How to use F# with Unity
-========================
+How to use F# libraries with Unity
+==================================
 
 Note: this has only been tested out with Xamarin Studio on Mac OS X
 
@@ -14,6 +14,8 @@ Note: this has only been tested out with Xamarin Studio on Mac OS X
 ```bash
     cp GameTypes.dll ../../../../Assets/Frameworks/
 ```
+
+* You can access namespaces/classes from C# components just like you'd expect
 
 How to write Unity components in F#
 ===================================
