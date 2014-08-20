@@ -18,15 +18,15 @@ Note: this has only been tested out with Xamarin Studio on Mac OS X
 How to write Unity components in F#
 ===================================
 
-1. Copy UnityEngine.dll to the F# project and add it as a reference
-2. The component will show up under the DLL in Unity's Project view, click the little arrow to fold it out (or just add it to a game object using the Add Component menu)
-3. Import the Unity namespace
+* Copy UnityEngine.dll to the F# project and add it as a reference
+* The component will show up under the DLL in Unity's Project view, click the little arrow to fold it out (or just add it to a game object using the Add Component menu)
+* Import the Unity namespace
 
 ```fsharp
     open UnityEngine
 ```
 
-4. Inherit from MonoBehaviour, as usual
+* Inherit from MonoBehaviour, as usual
 
 ```fsharp
     type SimpleComponent() =
@@ -34,21 +34,21 @@ How to write Unity components in F#
         member this.stuff = 42
 ```
 
-5. To show properties in the inspector, make them mutable and serializable
+* To show properties in the inspector, make them mutable and serializable
 
 ```fsharp
     [<SerializeField>]
     let mutable changeSpeed = 2.0f
 ```
 
-6. Override member functions
+* Override member functions
 
 ```fsharp
     member this.Start () = 
         this.transform.Translate(1.0f, -1.0f, 2.0f)
 ```
 
-7. Mutate members
+* Mutate members
 
 ```fsharp
     this.renderer.material.color <- Color.red
