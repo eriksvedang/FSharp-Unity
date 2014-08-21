@@ -6,8 +6,8 @@ Note: this has only been tested out with Xamarin Studio on Mac OS X
 1. Create a Unity Project
 2. Create a F# project (lib) and put it in the root of the Unity project
 3. In the Unity 'Assets' folder, create a folder called 'Frameworks' and add the FSharp.Core.dll to it
-4. Open the preferences for the F# project and change the 'Target Framework' to 'Mono / .NET 2.0'
-5. Remove all References in the project, except FSharp.Core and System
+4. Open the preferences for the F# project and change the 'Target Framework' to 'Mono / .NET 3.5'
+5. Remove all References in the project, System and System.Core
 6. Add the unity mscorlib.dll to somewhere in the F# project folder, and then to the project References
 7. Make a custom build command (working dir: ${TargetDir}) that copies the resulting dll to the Unity 'Frameworks' folder
 
