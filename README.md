@@ -12,7 +12,7 @@ Note: this has only been tested out with Xamarin Studio on Mac OS X
 7. Make a custom build command (working dir: ${TargetDir}) that copies the resulting dll to the Unity 'Frameworks' folder
 
 ```bash
-    cp GameTypes.dll ../../../../Assets/Frameworks/
+    cp MyFsharpLib.dll ../../../../Assets/Frameworks/
 ```
 
 * You can access namespaces/classes from C# components just like you'd expect
