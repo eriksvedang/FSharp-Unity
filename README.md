@@ -56,3 +56,5 @@ How to write Unity components in F#
     this.renderer.material.color <- Color.red
 ```
 
+---
+Hey, if you like this repo maybe you'd be interested in the language I'm working on. It's a functional language aimed at game development. Read more about it here: <a href="https://github.com/eriksvedang/Carp">https://github.com/eriksvedang/Carp</a>
